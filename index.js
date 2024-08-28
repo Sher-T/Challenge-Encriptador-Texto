@@ -1,4 +1,4 @@
-function mostrarMensajeEncriptado() {
+function mostrarMensajeEncriptado() { 
   document.getElementById("muñeco").style.display = "none";
   document.getElementById("mensaje__titulo").style.display = "none";
   document.getElementById("mensaje__parrafo").style.display = "none";
