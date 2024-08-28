@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="contenido">
+      <div class="encabezado">
+        <img class="logo" src="./img/aluraLogo.png">
+        <h1 class="encabezado__titulo">Challenge encriptador de texto</h1>
+      </div>
+      <div class="encriptar">
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Ingresa el texto aquí"
+        ></textarea>
+        <div class="aviso">
+          <p class="aviso__simbolo">&#9888;</p>
+          <p class="aviso__texto">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+          <button 
+            class="boton__encriptar" 
+            type="button" 
+            onclick="encriptar()">
+            Encriptar
+          </button>
+          <button
+            class="boton__desencriptar"
+            type="button"
+            onclick="desencriptar()">
+            desencriptar
+          </button>
+        </div>
+      </div>
+      <div class="encriptado">
+        <img src="img/muñeco.png" alt="" id="muñeco" />
+        <div class="mensaje__encriptado" id="mensaje__encriptado">
+          <h2 id="mensaje__titulo">
+            Ningún mensaje fue encontrado
+          </h2>
+          <p id="mensaje__parrafo">
+            Ingresa el texto que deseas encriptar o desencriptar
+          </p>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="30"
+            rows="10"
+            class="mensaje"
+            readonly
+          ></textarea>
+          <div class="boton__extra" id="boton__extra">
+            <button class="boton__copia" id="boton__copia" onclick="botonCopiar()">
+              Copiar
+            </button>
+        </div>
+        </div>
+      </div>
+    </div>
+    <footer class="autor">
+      <p class="autor__nombre">Desarrollado por Jeremy Tupa</p>
+      <p class="autor__nick">Sher-T</p>
+  </footer>
+  </body>
+  <script src="index.js"></script>
+</html>
